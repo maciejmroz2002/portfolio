@@ -20,11 +20,30 @@
                     </div>
                 </div>
                 
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                      <div id="bar1" class="bar"></div>
+                      <div id="bar2" class="bar"></div>
+                      <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                      <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#bio">Bio</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                      </ul>
+                    </nav> 
+                  </div>
+                  
+                  <div class="menu-bg" id="menu-bg"></div>
+
                 <ul class="navbar-links">
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+
             </div>
         </div>
 
@@ -323,51 +342,17 @@
 
             </div>
         </div>
-        <script>
+        <!-- <script>
             window.addEventListener("scroll", function(){
-    const header = document.querySelector("div.navbar");
-    header.classList.toggle("sticky", window.scrollY > 0)
-    // if (window.scrollY > 0){
-    //     document.documentElement.style.setProperty('--txt', '#000');  
-    // } else {
-    //     document.documentElement.style.setProperty('--txt', '#fff')
-    // }
-
-    const delay = ms => new Promise(res => setTimeout(res, ms));
-
-    const banner = document.querySelector("div.banner")
-    const bio = document.querySelector("div.bio");
-    const portfolio = document.querySelector("div.portfolio");
-    const contact = document.querySelector("div.contact");
-    const footer = document.querySelector("div.footer");
-
-    const txBio = document.getElementById("txBio");
-    const txPortfolio = document.getElementById("txPortfolio");
-    const txContact = document.getElementById("txContact");
-    const txHome = document.getElementById("txHome");
-
-    const yourFunction = async () => {
-        await delay(1000);
-        if (window.scrollY <= bio.getBoundingClientRect().top) {
-            console.log ("banner")
-            txHome.scrollIntoView({behavior: "smooth"});
-        } else if (window.scrollY <= portfolio.getBoundingClientRect().top) {
-            console.log("bio")
-    
-            txBio.scrollIntoView({behavior: "smooth"});
-        } else if ( window.scrollY >= contact.getBoundingClientRect().top && window.scrollY <= footer.getBoundingClientRect().top){
-            console.log("portfolio")
-    
-            txPortfolio.scrollIntoView({behavior: "smooth"});
-        } else if (window.scrollY >= contact.getBoundingClientRect().top) {
-            console.log("contact")
-    
-            txContact.scrollIntoView({behavior: "smooth"});
-        }
-      };
-
-    yourFunction();
-})
-        </script>
+                var header = document.querySelector("div.navbar");
+                var loginLink = document.querySelector("loginLink");
+                header.classList.toggle("sticky", window.scrollY > 0)
+                if (window.scrollY > 0){
+                    document.documentElement.style.setProperty('--txt', '#000');  
+                } else {
+                    document.documentElement.style.setProperty('--txt', '#fff')
+                }
+            })
+        </script> -->
     </body>
 </html>
