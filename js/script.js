@@ -1,3 +1,4 @@
+/*
 window.addEventListener("scroll", function(){
     const header = document.querySelector("div.navbar");
     header.classList.toggle("sticky", window.scrollY > 0)
@@ -48,3 +49,4 @@ function menuOnClick() {
     document.getElementById("nav").classList.toggle("change");
     document.getElementById("menu-bg").classList.toggle("change-bg");
   }
+*/
