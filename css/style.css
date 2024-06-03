@@ -344,6 +344,168 @@ li a.icon:hover {
 }
 
 
+.bio .content p {
+  color: var(--txt);
+  font-size: 1.1rem;
+
+}
+
+.bio .content h2{
+  margin: 75px 0 10px 0;
+  color: var(--color-main);
+}
+
+.bio .content .loop-slider {
+  overflow: hidden;
+  height: 75px;
+}
+
+.bio .content .loop-slider .inner {
+  max-width: 80v;
+  margin-top: 10px;
+}
+
+.history {
+  list-style: none;
+}
+
+.history p.title {
+  display: inline;
+  opacity: 100%;
+  font-weight: bold;
+}
+
+.history li {
+  width: 500px;
+  padding: 20px 20px 20px;
+  border-radius: 25px;
+  box-shadow: 
+  0 0.1rem 0.2rem rgb(0 0 0 / 20%),
+  0 0.1rem 0.5rem rgb(0 0 0 / 30%),
+  0 0.2rem 1.5rem rgb(0 0 0 / 40%);
+
+}
+
+.history p.year {
+  display: inline;
+}
+
+.history p {
+  color: var(--txt);
+  opacity: 75%;
+}
+
+.nd-li {
+  margin: 25px 50px;
+}
+
+.rd-li {
+  margin: 25px 100px;
+}
+
+
+
+
+
+
+
+.single-item, .item-content {
+	text-align: center;
+}
+img, .item-content {
+	transition: 0.7s all;
+	border-radius: 15px;
+}
+.single-item {
+	float: left;
+	max-width: 28%;
+	position: relative;
+	margin: 0 2%;
+	overflow: hidden;
+}
+.single-item img {
+	width: 100%;
+	margin-bottom: -4px;
+}
+.single-item .item-content {
+  
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	opacity: 0;
+	transform: translateY(100px);
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: end;
+  padding-bottom: 25px;
+}
+.single-item .item-content h2 {
+	font-size: 40px;
+	-webkit-text-stroke: .5px white;
+	color: transparent;
+}
+.single-item .item-content p {
+	letter-spacing: 3px;
+}
+.single-item:hover .item-content {
+	opacity: 1;
+	transform: translateY(0);
+}
+.single-item:hover img {
+	-webkit-filter: blur(5px);
+	filter: blur(10px);
+}
+@media screen and (max-width: 1148px) {
+	.single-item {
+		max-width: 48%;
+		margin: 1%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.single-item {
+		float: none;
+		max-width: 80%;
+		margin: 0 auto 30px;
+	}
+	.single-item .item-content h2 {
+		font-size: 25px;
+	}
+	.single-item .item-content p {
+		font-size: 14px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 800px) {
   .blob{
     left: -10px;
