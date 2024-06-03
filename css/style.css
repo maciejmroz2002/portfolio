@@ -346,12 +346,12 @@ li a.icon:hover {
 
 @media (max-width: 800px) {
   .blob{
-    left: -75px;
-    top: 20vh;
+    left: -10px;
+    bottom: 10vh;
   }
 
   .app {
-
+    display: none;
     bottom: 0px;
   }
 
@@ -459,7 +459,7 @@ li a.icon:hover {
     margin: 30px 0 20px 20px;
     background: linear-gradient(210deg, var(--opacity50), var(--bg1));
     border-radius: 50%;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
   }
 
 
@@ -484,7 +484,7 @@ li a.icon:hover {
   }
   
   .change-bg {
-    box-shadow: -16px 13px 44px 10px var(--bg1);
+    /* box-shadow: -16px 13px 44px 10px var(--bg1); */
     width: 195vw;
     height: 75vh;
     transform: translate(40%, -50%);
