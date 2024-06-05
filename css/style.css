@@ -156,7 +156,7 @@ a {
   display: none;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 870px) {
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -171,6 +171,7 @@ a {
       0 10px 27px rgba(0, 0, 0, 0.05);
       margin: 0vw 5vw;
       max-width: 89vw;
+      border: 2px solid var(--txt);
     }
     
     .nav-menu.active {
@@ -702,3 +703,20 @@ div.content {
 .blob {
   left: -70px;
 }}
+
+
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--first-color-lighten);
+  padding: .75rem 1rem;
+  border-radius: .25rem;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: var(--first-color-dark);
+}
+
+
+
