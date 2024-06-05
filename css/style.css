@@ -727,6 +727,8 @@ img, .item-content {
   padding: 10px 35px;
   min-width: 150px;
 }
+
+
 @media screen and (max-width: 768px) {
   .profile-card-inf__item {
     padding: 10px 20px;
